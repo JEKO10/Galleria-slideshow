@@ -11,6 +11,8 @@ nav {
   margin: 0 75px;
   padding: 20px 0;
   border-bottom: 1px solid #e5e5e5;
+  animation-name: opacity;
+  animation-duration: 2s;
 }
 
 nav button {
@@ -44,6 +46,8 @@ nav button:hover {
 
 .gallery > * {
   height: fit-content;
+  animation-name: opacity;
+  animation-duration: 3s;
 }
 
 .singleArt {
@@ -92,7 +96,7 @@ nav button:hover {
 .artPage {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
   max-width: 90vw;
   margin: 5rem auto 0 auto;
 }
@@ -102,9 +106,11 @@ nav button:hover {
   justify-content: center;
   align-items: center;
   flex-basis: 60%;
+  animation-name: opacity;
+  animation-duration: 2s;
 }
 
-.name {
+.picture .name {
   background-color: #fff;
   margin-left: -5rem;
   padding: 0 2rem 1rem;
@@ -135,12 +141,48 @@ nav button:hover {
   color: #7d7d7d;
 }
 
-.artPage p {
-  max-width: 500px;
+.artInfo {
+  padding: 0 5rem;
+  animation-name: opacity;
+  animation-duration: 4.5s;
+}
+
+.artInfo h1 {
+  font-weight: bold;
+  color: #e5e5e5;
+  font-size: 6rem;
+  margin: 0;
+}
+
+.artInfo p {
+  max-width: 400px;
+  font-weight: bold;
+  font-size: 0.875rem;
+  color: #7d7d7d;
+  line-height: 2;
+  margin-bottom: 2.25rem;
+}
+
+.artInfo a {
+  font-size: 0.5rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #7d7d7d;
+  letter-spacing: 0.15rem;
 }
 
 @media screen and (min-width: 576px) {
   .gallery {
     grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  }
+}
+
+@keyframes opacity {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
   }
 }
