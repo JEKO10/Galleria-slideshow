@@ -3,14 +3,13 @@ import { useParams, Link } from "react-router-dom";
 import data from "../data.json";
 
 function ArtPage() {
-  let { id } = useParams();
-  let counter = id;
-  const { year, small, name, artist, description, source } = data[id];
+  const { id } = useParams();
+  const { year, large, name, artist, description, source } = data[id];
 
   return (
     <section className="artPage">
       <div>
-        <img src={small} alt={name} />
+        <img src={large} alt={name} />
         <h1>{name}</h1>
         <h2>{artist.name}</h2>
         <img src={artist.image} alt={artist.name} />
