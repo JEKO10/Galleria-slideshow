@@ -8,27 +8,23 @@ function ArtPage() {
 
   return (
     <section className="artPage">
-      <div>
-        <img src={large} alt={name} />
-        <h1>{name}</h1>
-        <h2>{artist.name}</h2>
-        <img src={artist.image} alt={artist.name} />
+      <div className="picture">
+        <img src={large} alt={name} id="art" />
+        <div>
+          <div className="name">
+            <h1>{name}</h1>
+            <h2>{artist.name}</h2>
+          </div>
+          <img src={artist.image} alt={artist.name} id="artist" />
+        </div>
       </div>
-      <div>
+      <div className="artInfo">
         <h1>{year}</h1>
         <p>{description}</p>
         <a href={source} target="__blank">
           Go to Source
         </a>
       </div>
-      <button
-        onClick={() => {
-          id++;
-          console.log(id);
-        }}
-      >
-        Aleksa
-      </button>
     </section>
   );
 }
