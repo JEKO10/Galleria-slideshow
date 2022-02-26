@@ -1,7 +1,12 @@
-import React from "react";
+import { Link } from "react-router-dom";
 
 function Error() {
-  return <div></div>;
+  return (
+    <section className="error">
+      <h1>No Art Here!</h1>
+      <Link to="/">Back Home</Link>
+    </section>
+  );
 }
 
 export default Error;

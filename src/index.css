@@ -11,8 +11,7 @@ nav {
   margin: 0 75px;
   padding: 20px 0;
   border-bottom: 1px solid #e5e5e5;
-  animation-name: opacity;
-  animation-duration: 2s;
+  animation: opacity 2s ease;
 }
 
 nav button {
@@ -46,8 +45,7 @@ nav button:hover {
 
 .gallery > * {
   height: fit-content;
-  animation-name: opacity;
-  animation-duration: 3s;
+  animation: opacity 3s ease;
 }
 
 .singleArt {
@@ -72,7 +70,7 @@ nav button:hover {
   background: linear-gradient(rgba(0, 0, 0, 0.01), rgba(0, 0, 0, 0.85));
   color: #fff;
   transform: translateY(100%);
-  transition: all 0.3s linear;
+  transition: all 300ms ease;
 }
 
 .info h2 {
@@ -98,7 +96,7 @@ nav button:hover {
   justify-content: space-between;
   align-items: flex-start;
   max-width: 90vw;
-  margin: 5rem auto 0 auto;
+  margin: 5rem auto 2rem auto;
 }
 
 .picture {
@@ -106,8 +104,7 @@ nav button:hover {
   justify-content: center;
   align-items: center;
   flex-basis: 60%;
-  animation-name: opacity;
-  animation-duration: 2s;
+  animation: opacity 2s ease;
 }
 
 .picture .name {
@@ -125,7 +122,8 @@ nav button:hover {
 }
 
 .picture #art {
-  height: 550px;
+  /* height: 550px; */
+  width: 55%;
   margin-right: 2rem;
 }
 
@@ -142,9 +140,8 @@ nav button:hover {
 }
 
 .artInfo {
-  padding: 0 5rem;
-  animation-name: opacity;
-  animation-duration: 4.5s;
+  padding: 0 30px;
+  animation: opacity 4.5s ease;
 }
 
 .artInfo h1 {
@@ -169,6 +166,57 @@ nav button:hover {
   text-transform: uppercase;
   color: #7d7d7d;
   letter-spacing: 0.15rem;
+}
+
+.error {
+  text-align: center;
+  padding: 90px 30px;
+}
+
+.error h1 {
+  font-size: 3rem;
+}
+
+.error a {
+  text-transform: uppercase;
+  color: #000;
+  font-size: 2rem;
+}
+
+@media screen and (max-width: 1200px) {
+  .artPage {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .artInfo {
+    margin: 2rem 0;
+  }
+
+  .artInfo p {
+    max-width: 90%;
+    font-size: 1rem;
+  }
+
+  .picture {
+    align-items: flex-start;
+  }
+
+  .picture > div {
+    display: inline-block;
+    min-height: auto;
+  }
+
+  .picture .name {
+    padding: 1rem 2rem;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .info {
+    transform: translateY(0);
+  }
 }
 
 @media screen and (min-width: 576px) {

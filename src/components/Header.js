@@ -1,5 +1,5 @@
 import React from "react";
-import Logo from "../images/logo.svg";
+import Logo from "../logo.svg";
 import { Link } from "react-router-dom";
 
 function Header() {
@@ -8,7 +8,7 @@ function Header() {
       <Link to="/">
         <img src={Logo} alt="Logo" />
       </Link>
-      <button>Start Slideshow</button>
+      {/* <button>Start Slideshow</button> */}
     </nav>
   );
 }
