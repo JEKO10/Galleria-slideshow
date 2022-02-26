@@ -1,21 +1,33 @@
-import React from "react";
+import { useState } from "react";
 import { useParams } from "react-router-dom";
 import data from "../data.json";
 
 function ArtPage() {
   const { id } = useParams();
   const { year, large, gallery, name, artist, description, source } = data[id];
+  const [isOpened, setIsOpened] = useState(false);
 
   return (
     <>
-      <div className="large">
+      <div className={isOpened ? "large" : "large hide"}>
+        <button
+          onClick={() => {
+            setIsOpened(false);
+          }}
+        >
+          CLOSE
+        </button>
         <img src={gallery} alt={name} />
       </div>
       <section className="artPage">
         <div className="picture">
           <figure>
             <img src={large} alt={name} id="art" />
-            <button>
+            <button
+              onClick={() => {
+                setIsOpened(true);
+              }}
+            >
               <svg
                 xlink="http://www.w3.org/1999/xlink"
                 width="12"
