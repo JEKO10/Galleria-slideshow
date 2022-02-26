@@ -10,7 +10,8 @@
       "name": "Vincent Van Gogh"
     },
     "thumbnail": "https://galleria-slideshow.vercel.app/assets/starry-night/thumbnail.jpg",
-    "large": "https://galleria-slideshow.vercel.app/assets/starry-night/hero-large.jpg"
+    "large": "https://galleria-slideshow.vercel.app/assets/starry-night/hero-large.jpg",
+    "gallery": "https://galleria-slideshow.vercel.app/assets/starry-night/gallery.jpg"
   },
   {
     "id": 1,
@@ -23,7 +24,8 @@
       "name": "Hokusai"
     },
     "thumbnail": "https://galleria-slideshow.vercel.app/assets/the-great-wave-off-kanagawa/thumbnail.jpg",
-    "large": "https://galleria-slideshow.vercel.app/assets/the-great-wave-off-kanagawa/hero-large.jpg"
+    "large": "https://galleria-slideshow.vercel.app/assets/the-great-wave-off-kanagawa/hero-large.jpg",
+    "gallery": "https://galleria-slideshow.vercel.app/assets/the-great-wave-off-kanagawa/gallery.jpg"
   },
   {
     "id": 2,
@@ -36,7 +38,8 @@
       "name": "Artemisia Gentileschi"
     },
     "thumbnail": "https://galleria-slideshow.vercel.app/assets/penitent-magdalene/thumbnail.jpg",
-    "large": "https://galleria-slideshow.vercel.app/assets/penitent-magdalene/hero-large.jpg"
+    "large": "https://galleria-slideshow.vercel.app/assets/penitent-magdalene/hero-large.jpg",
+    "gallery": "https://galleria-slideshow.vercel.app/assets/penitent-magdalene/gallery.jpg"
   },
   {
     "id": 3,
@@ -49,7 +52,8 @@
       "name": "Pablo Picasso"
     },
     "thumbnail": "https://galleria-slideshow.vercel.app/assets/guernica/thumbnail.jpg",
-    "large": "https://galleria-slideshow.vercel.app/assets/guernica/hero-large.jpg"
+    "large": "https://galleria-slideshow.vercel.app/assets/guernica/hero-large.jpg",
+    "gallery": "https://galleria-slideshow.vercel.app/assets/guernica/gallery.jpg"
   },
   {
     "id": 4,
@@ -62,7 +66,8 @@
       "name": "Paul Cézanne"
     },
     "thumbnail": "https://galleria-slideshow.vercel.app/assets/the-boy-in-the-red-vest/thumbnail.jpg",
-    "large": "https://galleria-slideshow.vercel.app/assets/the-boy-in-the-red-vest/hero-large.jpg"
+    "large": "https://galleria-slideshow.vercel.app/assets/the-boy-in-the-red-vest/hero-large.jpg",
+    "gallery": "https://galleria-slideshow.vercel.app/assets/the-boy-in-the-red-vest/gallery.jpg"
   },
   {
     "id": 5,
@@ -75,7 +80,8 @@
       "name": "Jan van Eyck"
     },
     "thumbnail": "https://galleria-slideshow.vercel.app/assets/arnolfini-portrait/thumbnail.jpg",
-    "large": "https://galleria-slideshow.vercel.app/assets/arnolfini-portrait/hero-large.jpg"
+    "large": "https://galleria-slideshow.vercel.app/assets/arnolfini-portrait/hero-large.jpg",
+    "gallery": "https://galleria-slideshow.vercel.app/assets/arnolfini-portrait/gallery.jpg"
   },
   {
     "id": 6,
@@ -88,7 +94,8 @@
       "name": "Henri Rousseau"
     },
     "thumbnail": "https://galleria-slideshow.vercel.app/assets/the-sleeping-gypsy/thumbnail.jpg",
-    "large": "https://galleria-slideshow.vercel.app/assets/the-sleeping-gypsy/hero-large.jpg"
+    "large": "https://galleria-slideshow.vercel.app/assets/the-sleeping-gypsy/hero-large.jpg",
+    "gallery": "https://galleria-slideshow.vercel.app/assets/the-sleeping-gypsy/gallery.jpg"
   },
   {
     "id": 7,
@@ -101,7 +108,8 @@
       "name": "Vincent Van Gogh"
     },
     "thumbnail": "https://galleria-slideshow.vercel.app/assets/the-night-cafe/thumbnail.jpg",
-    "large": "https://galleria-slideshow.vercel.app/assets/the-night-cafe/hero-large.jpg"
+    "large": "https://galleria-slideshow.vercel.app/assets/the-night-cafe/hero-large.jpg",
+    "gallery": "https://galleria-slideshow.vercel.app/assets/the-night-cafe/gallery.jpg"
   },
   {
     "id": 8,
@@ -114,7 +122,8 @@
       "name": "Rembrandt"
     },
     "thumbnail": "https://galleria-slideshow.vercel.app/assets/the-storm-on-the-sea-of-galilee/thumbnail.jpg",
-    "large": "https://galleria-slideshow.vercel.app/assets/the-storm-on-the-sea-of-galilee/hero-large.jpg"
+    "large": "https://galleria-slideshow.vercel.app/assets/the-storm-on-the-sea-of-galilee/hero-large.jpg",
+    "gallery": "https://galleria-slideshow.vercel.app/assets/the-storm-on-the-sea-of-galilee/gallery.jpg"
   },
   {
     "id": 9,
@@ -127,7 +136,8 @@
       "name": "Johannes Vermeer"
     },
     "thumbnail": "https://galleria-slideshow.vercel.app/assets/girl-with-pearl-earring/thumbnail.jpg",
-    "large": "https://galleria-slideshow.vercel.app/assets/girl-with-pearl-earring/hero-large.jpg"
+    "large": "https://galleria-slideshow.vercel.app/assets/girl-with-pearl-earring/hero-large.jpg",
+    "gallery": "https://galleria-slideshow.vercel.app/assets/girl-with-pearl-earring/gallery.jpg"
   },
   {
     "id": 10,
@@ -140,7 +150,8 @@
       "name": "Jean-Honoré Fragonard"
     },
     "thumbnail": "https://galleria-slideshow.vercel.app/assets/the-swing/thumbnail.jpg",
-    "large": "https://galleria-slideshow.vercel.app/assets/the-swing/hero-large.jpg"
+    "large": "https://galleria-slideshow.vercel.app/assets/the-swing/hero-large.jpg",
+    "gallery": "https://galleria-slideshow.vercel.app/assets/the-swing/gallery.jpg"
   },
   {
     "id": 11,
@@ -153,7 +164,8 @@
       "name": "Leonardo da Vinci"
     },
     "thumbnail": "https://galleria-slideshow.vercel.app/assets/lady-with-an-ermine/thumbnail.jpg",
-    "large": "https://galleria-slideshow.vercel.app/assets/lady-with-an-ermine/hero-large.jpg"
+    "large": "https://galleria-slideshow.vercel.app/assets/lady-with-an-ermine/hero-large.jpg",
+    "gallery": "https://galleria-slideshow.vercel.app/assets/lady-with-an-ermine/gallery.jpg"
   },
   {
     "id": 12,
@@ -166,7 +178,8 @@
       "name": "Paul Cézanne"
     },
     "thumbnail": "https://galleria-slideshow.vercel.app/assets/the-basket-of-apples/thumbnail.jpg",
-    "large": "https://galleria-slideshow.vercel.app/assets/the-basket-of-apples/hero-large.jpg"
+    "large": "https://galleria-slideshow.vercel.app/assets/the-basket-of-apples/hero-large.jpg",
+    "gallery": "https://galleria-slideshow.vercel.app/assets/the-basket-of-apples/gallery.jpg"
   },
   {
     "id": 13,
@@ -179,7 +192,8 @@
       "name": "Vincent Van Gogh"
     },
     "thumbnail": "https://galleria-slideshow.vercel.app/assets/van-gogh-self-portrait/thumbnail.jpg",
-    "large": "https://galleria-slideshow.vercel.app/assets/van-gogh-self-portrait/hero-large.jpg"
+    "large": "https://galleria-slideshow.vercel.app/assets/van-gogh-self-portrait/hero-large.jpg",
+    "gallery": "https://galleria-slideshow.vercel.app/assets/van-gogh-self-portrait/gallery.jpg"
   },
   {
     "id": 14,
@@ -192,6 +206,7 @@
       "name": "Leonardo da Vinci"
     },
     "thumbnail": "https://galleria-slideshow.vercel.app/assets/mona-lisa/thumbnail.jpg",
-    "large": "https://galleria-slideshow.vercel.app/assets/mona-lisa/hero-large.jpg"
+    "large": "https://galleria-slideshow.vercel.app/assets/mona-lisa/hero-large.jpg",
+    "gallery": "https://galleria-slideshow.vercel.app/assets/mona-lisa/gallery.jpg"
   }
 ]
