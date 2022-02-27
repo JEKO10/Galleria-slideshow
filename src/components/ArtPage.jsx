@@ -7,9 +7,20 @@ function ArtPage() {
   const { year, large, gallery, name, artist, description, source } = data[id];
   const [isOpened, setIsOpened] = useState(false);
 
+  if (isOpened) {
+    document.body.style.position = "fixed";
+  } else {
+    document.body.style.position = "static";
+  }
+
   return (
     <>
-      <div className={isOpened ? "large" : "large hide"}>
+      <div
+        className={isOpened ? "large" : "large hide"}
+        onClick={() => {
+          setIsOpened(false);
+        }}
+      >
         <button
           onClick={() => {
             setIsOpened(false);
@@ -17,7 +28,9 @@ function ArtPage() {
         >
           CLOSE
         </button>
-        <img src={gallery} alt={name} />
+        <div>
+          <img src={gallery} alt={name} />
+        </div>
       </div>
       <section className="artPage">
         <div className="picture">

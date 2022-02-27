@@ -149,6 +149,8 @@ nav button:hover {
   align-items: flex-start;
   flex-direction: column;
   height: 100%;
+  position: static;
+  z-index: 2;
 }
 
 .picture #art {
@@ -216,29 +218,30 @@ nav button:hover {
 
 .large {
   position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 5;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  background: rgba(0, 0, 0, 0.85);
+  inset: 0px;
   height: 100vh;
-  width: 100vw;
-  animation: opacity 500ms ease;
+  background: rgba(0, 0, 0, 0.85);
+  display: grid;
+  place-content: center;
+  z-index: 5;
+  transform: translateX(0);
+  transition: all 1s ease;
+}
+
+.large > div {
+  position: relative;
+  padding: 0px 1.5rem;
+  margin: 0px auto;
+  max-width: 1100px;
+  z-index: 5;
 }
 
 .large img {
   max-width: 100%;
   display: block;
-  height: 90%;
 }
 
 .large button {
-  position: absolute;
-  top: 1rem;
-  right: 5rem;
   color: #fff;
   border: none;
   background: none;
@@ -251,7 +254,13 @@ nav button:hover {
 }
 
 .hide {
-  display: none;
+  transform: translateX(-100%);
+}
+
+@media screen and (min-width: 576px) {
+  .gallery {
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  }
 }
 
 @media screen and (max-width: 1200px) {
@@ -290,9 +299,73 @@ nav button:hover {
   }
 }
 
-@media screen and (min-width: 576px) {
-  .gallery {
-    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+@media screen and (max-width: 768px) {
+  .artPage {
+    margin: 1rem auto 2rem;
+  }
+
+  .picture {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem;
+  }
+
+  .picture > div {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .picture .name {
+    margin-left: 0;
+  }
+
+  .picture h1 {
+    font-size: 2.5rem;
+    text-align: center;
+  }
+
+  .picture #art {
+    margin-right: 0;
+  }
+
+  #artist {
+    padding: 1rem 2rem;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  nav {
+    margin: 0 30px;
+  }
+
+  .picture figure {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .picture h1 {
+    font-size: 2rem;
+  }
+
+  .picture .name {
+    padding: 0 1rem 1rem;
+  }
+
+  #artist {
+    padding: 0 1rem;
+  }
+
+  .artInfo {
+    padding: 0 15px;
+  }
+
+  .artInfo p {
+    font-size: 0.875rem;
+    line-height: 2;
+    max-width: 100%;
   }
 }
 
