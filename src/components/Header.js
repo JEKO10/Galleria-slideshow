@@ -8,7 +8,7 @@ function Header() {
       <Link to="/">
         <img src={Logo} alt="Logo" />
       </Link>
-      {/* <button>Start Slideshow</button> */}
+      <button>Start Slideshow</button>
     </nav>
   );
 }

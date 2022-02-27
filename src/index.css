@@ -346,6 +346,18 @@ nav button:hover {
 }
 
 @media screen and (max-width: 480px) {
+  nav {
+    margin: 0 10px;
+  }
+
+  nav img {
+    height: 30px;
+  }
+
+  nav button {
+    font-size: 0.65rem;
+  }
+
   .picture h1 {
     font-size: 2rem;
   }

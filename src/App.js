@@ -1,24 +1,20 @@
-import { HashRouter as Router, Route, Switch } from "react-router-dom";
+import { HashRouter as Router, Route, Routes } from "react-router-dom";
 import Header from "./components/Header";
 import Gallery from "./components/Gallery";
 import Error from "./components/Error";
 import ArtPage from "./components/ArtPage";
+import Slideshow from "./components/Slideshow";
 
 function App() {
   return (
     <Router>
       <Header />
-      <Switch>
-        <Route exact path="/">
-          <Gallery />
-        </Route>
-        <Route path="/art/:id">
-          <ArtPage />
-        </Route>
-        <Route path="*">
-          <Error />
-        </Route>
-      </Switch>
+      <Routes>
+        <Route exact path="/" element={<Gallery />} />
+        <Route path="/art/:id" element={<ArtPage />} />
+        <Route path="/slideshow/:id" element={<Slideshow />} />
+        <Route path="*" element={<Error />} />
+      </Routes>
     </Router>
   );
 }
