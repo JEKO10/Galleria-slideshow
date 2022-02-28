@@ -7,10 +7,29 @@ function Slideshow() {
   if (id < 0) id = 14;
   const { name, artist } = data[id];
   const navigate = useNavigate();
+  let width = "7.142857142857143" * id;
+
+  const handleScroll = () => {
+    window.scroll({
+      top: 0,
+      left: 0,
+      behavior: "smooth",
+    });
+  };
 
   return (
     <section className="slideShow">
-      <div className="line"></div>
+      <div className="line">
+        <div
+          style={{
+            content: "",
+            position: "absolute",
+            background: "#000",
+            height: "100%",
+            width: width + "%",
+          }}
+        ></div>
+      </div>
       <div>
         <div>
           <h3> {name}</h3>
@@ -20,6 +39,7 @@ function Slideshow() {
           <button
             onClick={() => {
               navigate(`/art/${+id - 1}`);
+              handleScroll();
             }}
           >
             <svg
@@ -46,6 +66,7 @@ function Slideshow() {
           <button
             onClick={() => {
               navigate(`/art/${+id + 1}`);
+              handleScroll();
             }}
           >
             <svg

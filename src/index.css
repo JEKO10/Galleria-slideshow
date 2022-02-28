@@ -280,13 +280,13 @@ nav button:hover {
   height: 2px;
 }
 
-.slideShow .line::after {
+/* .slideShow .line::after {
   content: "";
   position: absolute;
   background-color: #000;
   height: 100%;
   width: 7%;
-}
+} */
 
 .slideShow h3 {
   margin-bottom: 0;
@@ -400,11 +400,12 @@ nav button:hover {
 
   .slideShow > div:not(.line) {
     flex-direction: column;
-    align-items: flex-start;
   }
 
-  .slideShow > div > div:first-of-type {
+  .slideShow > div:last-of-type > div:first-of-type {
     margin-bottom: 1rem;
+    align-items: flex-start;
+    width: 100%;
   }
 }
 

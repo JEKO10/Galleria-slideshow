@@ -12,7 +12,6 @@ function App() {
       <Routes>
         <Route exact path="/" element={<Gallery />} />
         <Route path="/art/:id" element={<ArtPage />} />
-        <Route path="/slideshow/:id" element={<Slideshow />} />
         <Route path="*" element={<Error />} />
       </Routes>
     </Router>
