@@ -1,15 +1,25 @@
-import React from "react";
 import Logo from "../images/logo.svg";
 import { Link } from "react-router-dom";
 
-function Header() {
+function Header({ slideShow, setSlideShow }) {
   return (
     <nav>
-      <Link to="/">
+      <Link
+        to="/"
+        onClick={() => {
+          setSlideShow(false);
+        }}
+      >
         <img src={Logo} alt="Logo" />
       </Link>
-      <Link to="/art/0">
-        <button>Start Slideshow</button>
+      <Link
+        // to={!slideShow ? "/art/0" : "#"}
+        to="/art/0"
+        onClick={() => {
+          setSlideShow(!slideShow);
+        }}
+      >
+        <button>{slideShow ? "Stop" : "Start"} Slideshow</button>
       </Link>
     </nav>
   );

@@ -1,13 +1,23 @@
 import { useParams, useNavigate } from "react-router-dom";
+import { useEffect, useState } from "react";
 import data from "../data.json";
 
-function Slideshow() {
+function Slideshow({ slideShow, setSlideShow }) {
   let { id } = useParams();
   if (id > 14) id = 0;
   if (id < 0) id = 14;
   const { name, artist } = data[id];
   const navigate = useNavigate();
   let width = "7.142857142857143" * id;
+
+  useEffect(() => {
+    if (slideShow) {
+      const timer = setTimeout(() => {
+        navigate(`/art/${+id + 1}`);
+      }, 4000);
+      return () => clearTimeout(timer);
+    }
+  }, [slideShow, id]);
 
   const handleScroll = () => {
     window.scroll({
@@ -40,6 +50,7 @@ function Slideshow() {
             onClick={() => {
               navigate(`/art/${+id - 1}`);
               handleScroll();
+              setSlideShow(false);
             }}
           >
             <svg
@@ -67,6 +78,7 @@ function Slideshow() {
             onClick={() => {
               navigate(`/art/${+id + 1}`);
               handleScroll();
+              setSlideShow(false);
             }}
           >
             <svg

@@ -3,7 +3,7 @@ import { useParams } from "react-router-dom";
 import data from "../data.json";
 import Slideshow from "./Slideshow";
 
-function ArtPage() {
+function ArtPage({ slideShow, setSlideShow }) {
   let { id } = useParams();
   if (id > 14) id = 0;
   if (id < 0) id = 14;
@@ -76,7 +76,7 @@ function ArtPage() {
           </a>
         </div>
       </section>
-      <Slideshow />
+      <Slideshow slideShow={slideShow} setSlideShow={setSlideShow} />
     </>
   );
 }
