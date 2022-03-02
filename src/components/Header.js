@@ -13,8 +13,7 @@ function Header({ slideShow, setSlideShow }) {
         <img src={Logo} alt="Logo" />
       </Link>
       <Link
-        // to={!slideShow ? "/art/0" : "#"}
-        to="/art/0"
+        to={!slideShow ? "/art/0" : "#"}
         onClick={() => {
           setSlideShow(!slideShow);
         }}

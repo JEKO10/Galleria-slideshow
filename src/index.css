@@ -97,6 +97,7 @@ nav button:hover {
   align-items: flex-start;
   max-width: 90vw;
   margin: 5rem auto 2rem auto;
+  overflow: hidden;
 }
 
 .picture {
@@ -445,6 +446,22 @@ nav button:hover {
   }
 }
 
+.picture.right {
+  animation: rightFade 2s ease, opacity 3s ease;
+}
+
+.picture.left {
+  animation: leftFade 2s ease, opacity 3.5s ease;
+}
+
+.artInfo.right {
+  animation: rightFade 2s ease, opacity 3s ease;
+}
+
+.artInfo.left {
+  animation: leftFade 2s ease, opacity 3.5s ease;
+}
+
 @keyframes opacity {
   from {
     opacity: 0;
@@ -452,5 +469,25 @@ nav button:hover {
 
   to {
     opacity: 1;
+  }
+}
+
+@keyframes rightFade {
+  from {
+    transform: translateX(200%);
+  }
+
+  to {
+    transform: translateX(0%);
+  }
+}
+
+@keyframes leftFade {
+  from {
+    transform: translateX(-200%);
+  }
+
+  to {
+    transform: translateX(0%);
   }
 }

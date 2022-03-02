@@ -9,6 +9,7 @@ function ArtPage({ slideShow, setSlideShow }) {
   if (id < 0) id = 14;
   const { year, large, gallery, name, artist, description, source } = data[id];
   const [isOpened, setIsOpened] = useState(false);
+  const [fade, setFade] = useState("");
 
   if (isOpened) {
     document.body.style.position = "fixed";
@@ -35,8 +36,16 @@ function ArtPage({ slideShow, setSlideShow }) {
           <img src={gallery} alt={name} />
         </div>
       </div>
-      <section className="artPage">
-        <div className="picture">
+      <section className="artPage" key={id}>
+        <div
+          className={
+            fade === "left"
+              ? "picture left"
+              : fade === "right"
+              ? "picture right"
+              : "picture"
+          }
+        >
           <figure>
             <img src={large} alt={name} id="art" />
             <button
@@ -68,7 +77,15 @@ function ArtPage({ slideShow, setSlideShow }) {
             <img src={artist.image} alt={artist.name} id="artist" />
           </div>
         </div>
-        <div className="artInfo">
+        <div
+          className={
+            fade === "left"
+              ? "artInfo left"
+              : fade === "right"
+              ? "artInfo right"
+              : "artInfo"
+          }
+        >
           <h1>{year}</h1>
           <p>{description}</p>
           <a href={source} target="__blank">
@@ -76,7 +93,11 @@ function ArtPage({ slideShow, setSlideShow }) {
           </a>
         </div>
       </section>
-      <Slideshow slideShow={slideShow} setSlideShow={setSlideShow} />
+      <Slideshow
+        slideShow={slideShow}
+        setSlideShow={setSlideShow}
+        setFade={setFade}
+      />
     </>
   );
 }

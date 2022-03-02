@@ -1,8 +1,8 @@
 import { useParams, useNavigate } from "react-router-dom";
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 import data from "../data.json";
 
-function Slideshow({ slideShow, setSlideShow }) {
+function Slideshow({ slideShow, setFade }) {
   let { id } = useParams();
   if (id > 14) id = 0;
   if (id < 0) id = 14;
@@ -12,20 +12,12 @@ function Slideshow({ slideShow, setSlideShow }) {
 
   useEffect(() => {
     if (slideShow) {
-      const timer = setTimeout(() => {
+      const slider = setTimeout(() => {
         navigate(`/art/${+id + 1}`);
       }, 4000);
-      return () => clearTimeout(timer);
+      return () => clearTimeout(slider);
     }
-  }, [slideShow, id]);
-
-  const handleScroll = () => {
-    window.scroll({
-      top: 0,
-      left: 0,
-      behavior: "smooth",
-    });
-  };
+  }, [slideShow, id, navigate]);
 
   return (
     <section className="slideShow">
@@ -49,8 +41,7 @@ function Slideshow({ slideShow, setSlideShow }) {
           <button
             onClick={() => {
               navigate(`/art/${+id - 1}`);
-              handleScroll();
-              setSlideShow(false);
+              setFade("left");
             }}
           >
             <svg
@@ -77,8 +68,7 @@ function Slideshow({ slideShow, setSlideShow }) {
           <button
             onClick={() => {
               navigate(`/art/${+id + 1}`);
-              handleScroll();
-              setSlideShow(false);
+              setFade("right");
             }}
           >
             <svg
