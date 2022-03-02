@@ -7,7 +7,20 @@ function ArtPage({ slideShow, setSlideShow }) {
   let { id } = useParams();
   if (id > 14) id = 0;
   if (id < 0) id = 14;
-  const { year, large, gallery, name, artist, description, source } = data[id];
+  const defaultValue = {
+    year: "No art Here",
+    large: "No art Here",
+    gallery: "No art Here",
+    name: "Enter id as number",
+    artist: "No art Here",
+    description: "No art Here",
+    source: "No art Here",
+  };
+  if (data[id] === undefined) {
+    data[id] = defaultValue;
+  }
+  let { year, large, gallery, name, artist, description, source } = data[id];
+
   const [isOpened, setIsOpened] = useState(false);
   const [fade, setFade] = useState("");
 
@@ -93,6 +106,7 @@ function ArtPage({ slideShow, setSlideShow }) {
           </a>
         </div>
       </section>
+
       <Slideshow
         slideShow={slideShow}
         setSlideShow={setSlideShow}
