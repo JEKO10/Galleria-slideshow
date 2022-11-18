@@ -17,7 +17,7 @@ This is a solution to the [Galleria slideshow site](https://www.frontendmentor.i
 
 ## Project overview
 
-Visually, one of the most beautiful React apps I have made. The home page displays more than 10 paintings and navbar with START SLIDESHOW button. Click on that button to start paintings slideshow. Slideshow was made using useParams method from react-router-dom, id-s are increasing every 4 seconds. There is also a progress bar and 2 arrows for navigation through the paintings. ArtPage displays basic info about selected painting like artist, artist's picture, the year it was painted, etc. I also created an error page that just displays a link to go back home.
+Visually, one of the most beautiful React apps I have made. The home page displays more than 10 paintings and a navbar with a START SLIDESHOW button. Click on that button to start the paintings' slideshow. A slideshow was made using useParams method from react-router-dom, id-s are increasing every 4 seconds. There is also a progress bar and 2 arrows for navigation through the paintings. ArtPage displays basic info about selected painting like the artist, the artist's picture, the year it was painted, etc. I also created an error page that just displays a link to go back home.
 
 ## Built with
 
