@@ -13,7 +13,7 @@
 
 ## Project task
 
-This is a solution to the [Galleria slideshow site](https://www.frontendmentor.io/challenges/galleria-slideshow-site-tEA4pwsa6). Created in React, using local JSON file there is the masonry layout, slideshow logic, and lightbox view.
+This is a solution to the [Galleria slideshow site](https://www.frontendmentor.io/challenges/galleria-slideshow-site-tEA4pwsa6). Created in React, using a local JSON file there is the masonry layout, slideshow logic, and lightbox view.
 
 ## Project overview
 
