@@ -2,7 +2,7 @@ import { useParams, useNavigate } from "react-router-dom";
 import { useEffect } from "react";
 import data from "../data.json";
 
-function Slideshow({ slideShow, setFade }) {
+function Slideshow({ slideShow, setFade, artInfo, pictureInfo }) {
   let { id } = useParams();
   if (id > 14) id = 0;
   if (id < 0) id = 14;
@@ -14,10 +14,13 @@ function Slideshow({ slideShow, setFade }) {
     if (slideShow) {
       const slider = setTimeout(() => {
         navigate(`/art/${+id + 1}`);
+        artInfo.current.style.animation = "rightFade 2s ease, opacity 3s ease";
+        pictureInfo.current.style.animation =
+          "rightFade 2s ease, opacity 3s ease";
       }, 4000);
       return () => clearTimeout(slider);
     }
-  }, [slideShow, id, navigate]);
+  }, [slideShow, id, navigate, artInfo, pictureInfo]);
 
   return (
     <section className="slideShow">

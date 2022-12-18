@@ -98,6 +98,7 @@ nav button:hover {
   max-width: 90vw;
   margin: 5rem auto 2rem auto;
   overflow: hidden;
+  min-height: 70vh;
 }
 
 .picture {
@@ -110,6 +111,7 @@ nav button:hover {
 
 .picture figure {
   position: relative;
+  height: 560px;
 }
 
 .picture figure button {
@@ -321,6 +323,10 @@ nav button:hover {
     align-items: center;
   }
 
+  .picture figure {
+    width: 100%;
+  }
+
   .artInfo {
     margin: 2rem 0;
   }
@@ -389,10 +395,6 @@ nav button:hover {
 @media screen and (max-width: 576px) {
   nav {
     margin: 0 30px;
-  }
-
-  .picture figure {
-    width: 100%;
   }
 
   .slideShow {

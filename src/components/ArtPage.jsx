@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useRef } from "react";
 import { useParams } from "react-router-dom";
 import data from "../data.json";
 import Slideshow from "./Slideshow";
@@ -23,6 +23,8 @@ function ArtPage({ slideShow, setSlideShow }) {
 
   const [isOpened, setIsOpened] = useState(false);
   const [fade, setFade] = useState("");
+  const artInfo = useRef(null);
+  const pictureInfo = useRef(null);
 
   if (isOpened) {
     document.body.style.position = "fixed";
@@ -51,6 +53,7 @@ function ArtPage({ slideShow, setSlideShow }) {
       </div>
       <section className="artPage" key={id}>
         <div
+          ref={pictureInfo}
           className={
             fade === "left"
               ? "picture left"
@@ -91,6 +94,7 @@ function ArtPage({ slideShow, setSlideShow }) {
           </div>
         </div>
         <div
+          ref={artInfo}
           className={
             fade === "left"
               ? "artInfo left"
@@ -106,11 +110,12 @@ function ArtPage({ slideShow, setSlideShow }) {
           </a>
         </div>
       </section>
-
       <Slideshow
         slideShow={slideShow}
         setSlideShow={setSlideShow}
         setFade={setFade}
+        artInfo={artInfo}
+        pictureInfo={pictureInfo}
       />
     </>
   );
