@@ -9,6 +9,7 @@
 - [Project task](#project-task)
 - [Project overview](#project-overview)
 - [Built with](#built-with)
+- [Lighthouse Score](#lighthouse-score)
 - [Live preview](#live-preview)
 
 ## Project task
@@ -26,6 +27,19 @@ This is one of the most visually appealing React apps I've created. The home pag
 - JSON
 - React Router Dom
 - GitHub Pages
+
+## Lighthouse Score
+
+![Lighthouse Score](https://github.com/JEKO10/Galleria-slideshow/assets/84730554/eb9885ac-a75b-4929-9081-29ae239e0ba1)
+
+- **Performance**: 96
+- **Accessibility**: 95
+- **Best Practices**: 100
+- **SEO**: 100
+
+*Last updated: 6/10/2024*
+
+I continuously strive to maintain and improve these scores with each update.
 
 ## Live preview
 
